@@ -18,8 +18,8 @@ email: ahschiller@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   An analog human in a digital world
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: madA_reverse
+url: "ahs8w.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: madA_reverse
 github_username: ahs8w
 linkedin_username: ahschiller
 

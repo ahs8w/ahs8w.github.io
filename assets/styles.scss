@@ -23,7 +23,14 @@ a {
 	}
 }
 
-.site-title:hover { color: lighten($site, 20%); }
+.site-header {
+	a {
+		color: $site;
+		&:hover {
+			color: lighten($site, 20%);
+		}
+	}
+}
 
 /* Within Post layout */
 .post-content {
