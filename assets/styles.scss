@@ -9,7 +9,8 @@ body {
 }
 
 $link: #2a7ae2;
-$site: #424242;
+$site: #fff;
+$top: #424242;
 
 a {
 	color: $link;
@@ -23,11 +24,32 @@ a {
 	}
 }
 
+.img-circle {
+	border-radius: 50%;
+	border: 2px solid $top;
+	max-height: 200px;
+	float: left;
+	margin: 1.5em 0em;
+	margin-right: 1em;
+}
+
+.site-title {
+	font-size: 40px;
+	margin: 1em 0em;
+}
+
 .site-header {
+	border-top: 8px solid $site;
+	background-color: #159957;
+	background-image: linear-gradient(120deg, #155799, #159957);
+
 	a {
 		color: $site;
+		&:visited {
+			color: $site;
+		}
 		&:hover {
-			color: lighten($site, 20%);
+			color: darken($site, 20%);
 		}
 	}
 }

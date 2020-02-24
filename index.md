@@ -5,6 +5,8 @@
 layout: home
 ---
 
+<img src="{{ "/assets/small_headshot.jpg" | relative_url }}" class="img-circle">
+
 Independent ML practioner interested in using deep learning to solve fun problems and explore to what extent Artificial Neural Nets can proxy human understanding.
 
 Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [app](http://transcribr.onrender.com) to see it working in real (slow) time.
