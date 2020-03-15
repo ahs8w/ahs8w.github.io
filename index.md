@@ -9,7 +9,7 @@ layout: home
 
 Independent ML researcher using deep learning to solve interesting problems and casually explore to what extent Artificial Neural Nets can proxy human understanding.
 
-Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [app](http://transcribr.onrender.com) to see it working in real time.
+Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [app](http://transcribr.net) to test it out in real time.
 
 Recovering web developer who at one time liked to build Rails applications with React UIs sprinkled on top.
 
