@@ -1,5 +1,5 @@
 ---
-url: http://transcribr.net
+prod_url: http://transcribr.net
 ---
 
 ##### A Transformer-based handwriting recognition architecture
