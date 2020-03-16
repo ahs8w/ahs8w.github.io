@@ -1,3 +1,6 @@
+---
+url: http://transcribr.net
+---
 
 ##### A Transformer-based handwriting recognition architecture
 
@@ -6,7 +9,7 @@
 
 Digitizing handwritten documents to improve storage, access, search, and analysis is a compelling challenge. Prior to the deep learning revolution, no clear path existed towards achieving such a goal in a scalable way.
 
-In light of advancements in computer vision and language processing, reliable and automated handwriting recognition is within reach. Towards that end, I endeavored to design a practical application which balances accuracy, generalizability, and inference speed. This post is a retrospective on that attempt as well as an explanation of design choices and training procedures. Check out a demo [here](https://transcribr.onrender.com).
+In light of advancements in computer vision and language processing, reliable and automated handwriting recognition is within reach. Towards that end, I endeavored to design a practical application which balances accuracy, generalizability, and inference speed. This post is a retrospective on that attempt as well as an explanation of design choices and training procedures. Check out a demo [here]({{page.prod_url}}).
 
 Reading handwritten text is uniquely difficult. There are extreme variations between styles (e.g. cursive vs print vs block lettering), size, spacing, embellishments, and legibility. Misspellings, cross outs, and omissions are also common.
 
@@ -20,7 +23,7 @@ Many approaches to this problem divide the task into 3 separate components: segm
 
 Given the heterogeneity of handwriting, automatic text detection and segmentation can be error prone and often require custom preprocessing. An alternative approach is to frame text recognition as a sequence to sequence problem. A 2-dimensional image input with a 1-dimensional text output. The best performing sequence transduction models in NLP involve an encoder-decoder architecture, often including an attention mechanism. Perhaps the most revolutionary of these is the Transformer architecture *[3]* which is unique in that it relies solely on attention to encode representations of the input and output without resorting to any form of recurrence or convolution. An excellent explanation of the Transformer architecture can be found here: [The Annotated Transformer](http://nlp.seas.harvard.edu/2018/04/03/attention.html).
 
-This is not the first attempt to replace segmentation with attention in an end-to-end approach. *[5]* However, instead of augmenting the traditional recurrent layers with attention modules, I leveraged the Transformer architecture to surpass previous state-of-the-art results. Try the [Transcribr app](https://transcribr.onrender.com) for yourself!
+This is not the first attempt to replace segmentation with attention in an end-to-end approach. *[5]* However, instead of augmenting the traditional recurrent layers with attention modules, I leveraged the Transformer architecture to surpass previous state-of-the-art results. Try the [Transcribr app]({{page.prod_url}}) for yourself!
 
 ***
 
@@ -137,7 +140,7 @@ The following comparison with previously published architectures is not scientif
 
 ## **LIMITATIONS**
 
-I labored under several constraints during this project. The primary handicap was budget which directly impacts computational resources. Training was done on an NVIDIA P6000 (24GB RAM, 3840 CUDA cores). Inference for the [Transcribr app](https://transcribr.onrender.com) is performed on a paltry 1CPU with 1GB RAM and transcribes images at a pitiful rate of ~3 tokens/sec:(
+I labored under several constraints during this project. The primary handicap was budget which directly impacts computational resources. Training was done on an NVIDIA P6000 (24GB RAM, 3840 CUDA cores). Inference for the [Transcribr app]({{page.prod_url}}) is performed on a paltry 1CPU with 1GB RAM and transcribes images at a pitiful rate of ~3 tokens/sec:(
 
 (*Note: *Testing inference locally on a 2015 MacBook Pro with 4 cores and 16GB RAM, yields a good transcription rate of ~30 tokens/sec.)
 
@@ -148,7 +151,7 @@ Amount and quality of data was another factor. Synthetic data and augmentation w
 ![Transcribr (wordpiece token) results on 4 non-dataset test images](https://cdn-images-1.medium.com/max/2260/1*fMKK_DdDZ2RqLMFV3d8maA.png)
 <span class='caption'>*Transcribr (wordpiece token) results on 4 non-dataset test images*</span>
 
-Architectural choices prioritized inference time above other factors, including accuracy. To this end, the model was kept as lean as possible, weighing in at a trim, ~50.8M parameters. Greedy decoding was used instead of the more accurate but costly, beam search. The [Transcribr app](https://transcribr.onrender.com) uses the less accurate but faster wordpiece tokenization scheme.
+Architectural choices prioritized inference time above other factors, including accuracy. To this end, the model was kept as lean as possible, weighing in at a trim, ~50.8M parameters. Greedy decoding was used instead of the more accurate but costly, beam search. The [Transcribr app]({{page.prod_url}}) uses the less accurate but faster wordpiece tokenization scheme.
 
 ***
 
@@ -174,7 +177,7 @@ These techniques allowed Transcribr to out-perform previously published results 
 
 ## **LINKS**
 
-* [Transcribr App](https://transcribr.onrender.com/)
+* [Transcribr App]({{page.prod_url}})
 
 * [Github Notebook](https://github.com/ahs8w/Handwriting/blob/master/1--Transcribr.ipynb)
 
