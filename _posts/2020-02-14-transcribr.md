@@ -175,6 +175,12 @@ These techniques allowed Transcribr to out-perform previously published results 
 
 ***
 
+## **UPDATE (3/2020)**
+
+Quantization and TorchScript serialization reduced the model size from 203MB to 21MB and improved the transcription rate to a much more reasonable ~15 tokens/sec. The production application now takes roughly 10 secs to process an image from the test set instead of the previously dreadful 1 minute. Huge improvement!
+
+***
+
 ## **LINKS**
 
 * [Transcribr App]({{page.prod_url}})
