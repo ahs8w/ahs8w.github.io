@@ -7,14 +7,14 @@ layout: home
 
 <img src="{{ "/assets/small_headshot.jpg" | relative_url }}" class="img-circle">
 
-Independent ML researcher using deep learning to solve interesting problems and casually explore to what extent Artificial Neural Nets can proxy human understanding.
+Independent ML researcher using deep learning to solve interesting problems and casually explore to what extent Artificial Neural Nets can proxy their organic analogues.
 
-Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [app](http://transcribr.net) to test it out in real time.
+Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [demo](http://transcribr.net) to see it read handwritten text in real time.
 
-Recovering web developer who at one time liked to build Rails applications with React UIs sprinkled on top.
+Spent some years devoted to Ruby building Rails applications and begrudgingly joined the Javascript bandwagon after witnessing the power and flexibility of React.
 
-Shuttered projects which entertained nonetheless:
+Shuttered personal projects which entertained nonetheless:
 * GoodwillXchange -- idealistic time-bank/complementary currency system
 * Thoughtsy -- idealistic thought-sharing social network
 
-Spent a large chunk of time wandering the globe. Now I mostly just read, play volleyball, and surf.
+Spent a large chunk of time wandering the globe. Now I mostly read, play volleyball, and surf when not thinking about neural nets.
