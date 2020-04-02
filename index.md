@@ -9,7 +9,7 @@ layout: home
 
 Independent ML researcher using deep learning to solve interesting problems and casually explore to what extent Artificial Neural Nets can proxy their organic analogues.
 
-Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [demo](http://transcribr.net) to see it read handwritten text in real time.
+Recently completed a project at the intersection of Computer Vision and Natural Language Processing.  See the Transcribr post below to learn more about it and be sure to check out the [demo](http://transcribr.net) to see it work in real time.
 
 Spent some years devoted to Ruby building Rails applications and begrudgingly joined the Javascript bandwagon after witnessing the power and flexibility of React.
 
